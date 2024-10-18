@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'wetwo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.cucumber:cucumber-core:7.19.0'
+    testImplementation 'io.cucumber:cucumber-java:7.19.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.19.0'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
+    testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
